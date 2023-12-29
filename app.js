@@ -7,7 +7,7 @@ const port = 3000;
 app.use(bodyParser.json());
 
 app.get('/',(req,res)=>{
-    res.send("apple");
+    res.sendFile(__dirname+"/index.js");
 })
 
 app.get('/add', (req, res) => {
