@@ -6,6 +6,10 @@ const port = 3000;
 
 app.use(bodyParser.json());
 
+app.get('/',(req,res)=>{
+    res.send("apple");
+})
+
 app.get('/add', (req, res) => {
   const num1 = parseFloat(req.query.num1);
   const num2 = parseFloat(req.query.num2);
